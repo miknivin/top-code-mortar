@@ -16,6 +16,7 @@ import "yet-another-react-lightbox/styles.css";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Counter from "@/components/common/Counter";
 import Link from "next/link";
+import Footer1 from "@/components/Footer/Footer1";
 SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]);
 const AboutPage = () => {
   const [isOpenimg, setOpenimg] = useState({
@@ -127,7 +128,7 @@ const AboutPage = () => {
             <div className="col-xl-7 col-lg-8">
               <div className="banner-content">
                 <h1>
-                  To Make Unique <br /> Depth, Bold Implact
+                  Solving with Precision <br /> Creating with Purpose
                 </h1>
                 <ul className="breadcrumb-list">
                   <li>
@@ -213,29 +214,30 @@ const AboutPage = () => {
             <div className="row gy-4 justify-content-between">
               <div className="col-xl-5 col-lg-6">
                 <div className="title-area">
-                  <h2>To Make Unique Depth, Bold Implact.</h2>
+                  <h2>
+                    We Turn Challenges <br /> Into Results
+                  </h2>
                   <span>
-                    “ We believe in bespoke strategies, designed specifically
-                    for your business needs.”
+                    “With a mix of strategy, creativity, and technology, we turn
+                    your toughest problems into meaningful progress. ”
                   </span>
                 </div>
               </div>
               <div className="col-xl-5 col-lg-6">
                 <div className="banner-content">
                   <p>
-                    Our diverse background spans <span>Design</span>,{" "}
-                    <span>Marketing</span>, and <span>Technology</span>,
-                    allowing us to offer full-spectrum digital services. From
-                    startups to established enterprises, we tailor solutions to
-                    fit your unique needs,{" "}
-                    <span>no matter your industry or size.</span>
+                    We’re a <span>creative, performance-focused team</span> that
+                    combines
+                    <span> design, marketing, and technology</span> to bring your
+                    ideas to life. Whether you’re a startup or an established
+                    business, we create solutions that fit your <span>specific goals
+                    and challenges.</span>
                   </p>
                   <p>
-                    We work closely with our clients to understand their goals,
-                    challenges, and opportunities, ensuring that every solution
-                    is custom-fit to deliver measurable results. By combining
-                    cutting-edge technology with creative innovation, we help
-                    businesses not only keep up but get ahead.
+                   We collaborate closely with you to deliver practical results by <span>mixing innovation with clear strategy</span>. Our focus is simple — helping your business grow with real impact.
+                  </p>
+                  <p style={{marginTop:"16px"}}>
+                    We specialize in <span>Marketing & Automation, Branding & Design, Media Production, and Web Development</span> —but what we really do is help you attract, engage, and convert more of the right customers.
                   </p>
                   <Link
                     href="/contact"
@@ -352,9 +354,9 @@ const AboutPage = () => {
                     <path d="M88 0V64H0L88 0Z" />
                     <path d="M60 8L10 44V8H60Z" />
                   </svg>
-                  <h2>Make A Innovative Solutions.</h2>
+                  <h2>We Move Fast, Build Smart, and Communicate Clearly.</h2>
                 </div>
-                <p>Smart solution to build a outstanding performance easily.</p>
+                <p>Speed with precision. Transparency at every step</p>
               </div>
             </div>
           </div>
@@ -366,27 +368,11 @@ const AboutPage = () => {
             >
               <div className="single-feature">
                 <h4>
-                  Expertise &amp; <br />
-                  Specialization
+                  Adaptive &amp; <br />
+                  Agile 
                 </h4>
-                <ul>
-                  <li>+ Social Media Marketing</li>
-                  <li>+ Email Marketing</li>
-                  <li>+ Content Marketing</li>
-                </ul>
                 <p>
-                  <svg
-                    width={22}
-                    height={22}
-                    viewBox="0 0 22 22"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g>
-                      <path d="M13.5263 8.297C10.5619 6.97028 8.38276 4.27662 7.77418 1C7.16559 4.27662 4.98647 6.97028 2.02207 8.297C1.45275 8.55833 0 8.96037 0 8.96037C0 8.96037 1.43312 9.36241 2.02207 9.62373C4.98647 10.9505 7.16559 13.6642 7.77418 16.9207C8.38276 13.6441 10.5619 10.9505 13.5263 9.62373C14.0956 9.36241 15.5484 8.96037 15.5484 8.96037C15.5484 8.96037 14.1152 8.55833 13.5263 8.297Z" />
-                      <path d="M20.8023 15.9137C19.0355 15.1297 17.7594 13.5216 17.3864 11.5918C17.033 13.5216 15.7373 15.1297 13.9705 15.9137C13.6367 16.0745 12.7729 16.2957 12.7729 16.2957C12.7729 16.2957 13.6171 16.5369 13.9705 16.6776C15.7373 17.4616 17.0134 19.0697 17.3864 20.9995C17.7594 19.0898 19.0355 17.4817 20.8023 16.6977C21.1361 16.5369 21.9999 16.3158 21.9999 16.3158C21.9999 16.3158 21.1361 16.0745 20.8023 15.9137Z" />
-                    </g>
-                  </svg>
-                  Agencies can ensure consistent and regular marketing efforts.
+                  We stay flexible and quick to respond to changing market trends and client needs.
                 </p>
               </div>
             </div>
@@ -397,27 +383,11 @@ const AboutPage = () => {
             >
               <div className="single-feature">
                 <h4>
-                  Cost <br />
-                  Effectiveness
+                  Strategic &amp;<br />
+                  Sustainable
                 </h4>
-                <ul>
-                  <li>+ Logo Design</li>
-                  <li>+ Rebranding Services</li>
-                  <li>+ Visual Branding</li>
-                </ul>
                 <p>
-                  <svg
-                    width={22}
-                    height={22}
-                    viewBox="0 0 22 22"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g>
-                      <path d="M13.5263 8.297C10.5619 6.97028 8.38276 4.27662 7.77418 1C7.16559 4.27662 4.98647 6.97028 2.02207 8.297C1.45275 8.55833 0 8.96037 0 8.96037C0 8.96037 1.43312 9.36241 2.02207 9.62373C4.98647 10.9505 7.16559 13.6642 7.77418 16.9207C8.38276 13.6441 10.5619 10.9505 13.5263 9.62373C14.0956 9.36241 15.5484 8.96037 15.5484 8.96037C15.5484 8.96037 14.1152 8.55833 13.5263 8.297Z" />
-                      <path d="M20.8023 15.9137C19.0355 15.1297 17.7594 13.5216 17.3864 11.5918C17.033 13.5216 15.7373 15.1297 13.9705 15.9137C13.6367 16.0745 12.7729 16.2957 12.7729 16.2957C12.7729 16.2957 13.6171 16.5369 13.9705 16.6776C15.7373 17.4616 17.0134 19.0697 17.3864 20.9995C17.7594 19.0898 19.0355 17.4817 20.8023 16.6977C21.1361 16.5369 21.9999 16.3158 21.9999 16.3158C21.9999 16.3158 21.1361 16.0745 20.8023 15.9137Z" />
-                    </g>
-                  </svg>
-                  Agencies can ensure consistent and regular marketing efforts.
+                  We leverage the latest tools and platforms to create efficient and cutting-edge solutions.
                 </p>
               </div>
             </div>
@@ -428,27 +398,11 @@ const AboutPage = () => {
             >
               <div className="single-feature">
                 <h4>
-                  Consistency &amp; <br />
+                  Transparent &amp; <br />
                   Reliability
                 </h4>
-                <ul>
-                  <li>+ Blog Writing</li>
-                  <li>+ Copywriting &amp; Copyediting</li>
-                  <li>+ Video Production</li>
-                </ul>
                 <p>
-                  <svg
-                    width={22}
-                    height={22}
-                    viewBox="0 0 22 22"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g>
-                      <path d="M13.5263 8.297C10.5619 6.97028 8.38276 4.27662 7.77418 1C7.16559 4.27662 4.98647 6.97028 2.02207 8.297C1.45275 8.55833 0 8.96037 0 8.96037C0 8.96037 1.43312 9.36241 2.02207 9.62373C4.98647 10.9505 7.16559 13.6642 7.77418 16.9207C8.38276 13.6441 10.5619 10.9505 13.5263 9.62373C14.0956 9.36241 15.5484 8.96037 15.5484 8.96037C15.5484 8.96037 14.1152 8.55833 13.5263 8.297Z" />
-                      <path d="M20.8023 15.9137C19.0355 15.1297 17.7594 13.5216 17.3864 11.5918C17.033 13.5216 15.7373 15.1297 13.9705 15.9137C13.6367 16.0745 12.7729 16.2957 12.7729 16.2957C12.7729 16.2957 13.6171 16.5369 13.9705 16.6776C15.7373 17.4616 17.0134 19.0697 17.3864 20.9995C17.7594 19.0898 19.0355 17.4817 20.8023 16.6977C21.1361 16.5369 21.9999 16.3158 21.9999 16.3158C21.9999 16.3158 21.1361 16.0745 20.8023 15.9137Z" />
-                    </g>
-                  </svg>
-                  Agencies can ensure consistent and regular marketing efforts.
+                  We believe in clear communication and building honest, lasting relationships with clients.
                 </p>
               </div>
             </div>
@@ -460,7 +414,7 @@ const AboutPage = () => {
           >
             <div className="col-xl-8 col-lg-10">
               <div className="contact-btn-area two">
-                <h6>To Make Sure to Best Service Provide Our Clients.</h6>
+                <h6>Let’s build something powerful—together.</h6>
                 <Link href="/contact" className="primary-btn3 two btn-hover">
                   Start The Journey
                   <svg
@@ -908,9 +862,10 @@ const AboutPage = () => {
                 <div className="section-title three white">
                   <h2>Collective of Creative Thinkers.</h2>
                   <p>
-                    We are a collective of creative thinkers, tech enthusiasts,
-                    and strategic innovators. Our passion lies in helping
-                    businesses thrive in the world.
+                    At our core, we’re a team of passionate creatives, strategists, and tech lovers who believe in the power of bold ideas and smart execution. We don’t just work for businesses—we work with people, bringing brands to life through seamless marketing, impactful design, stunning media, and user-first web experiences.
+                  </p>
+                  <p>
+                    Whether you’re a startup finding your voice or an established brand ready for the next leap, we’re here to make your message matter.
                   </p>
                 </div>
               </div>
@@ -1373,7 +1328,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <Home3Footer />
+      <Footer1 />
     </>
   );
 };

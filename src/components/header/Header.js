@@ -149,7 +149,7 @@ const Header = ({ style = "", fluid }) => {
   const isPortfolioActive = portfolioPaths.some((path) =>
     pathname.startsWith(path)
   );
-  const isHomeActive = homePaths.some((path) => pathname.startsWith(path));
+  const isHomeActive = homePaths.some((path) => pathname.startsWith(path) && !pathname.startsWith('/about'));
   return (
     <header className="header-area style-1">
       <div className="container-xl container-fluid d-flex flex-nowrap align-items-center justify-content-between">

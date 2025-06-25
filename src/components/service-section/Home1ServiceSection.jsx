@@ -175,8 +175,9 @@ const Home1ServiceSection = () => {
                 </Link>
               </h3>
               <p>
-                We create powerful custom e-commerce platforms that drive sales
-                &amp; customer engagement.
+                Custom e-commerce platforms that make shopping smooth and
+                engaging—built to connect with your customers and grow your
+                business.
               </p>
               <Link href="/service/details" className="learn-btn">
                 View Details
@@ -205,8 +206,9 @@ const Home1ServiceSection = () => {
                 <Link href="/service/details">ERP Solutions</Link>
               </h3>
               <p>
-                Custom ERP tailored to your business—covering finance, CRM,
-                supply chain, HR, and more.
+                Enterprise Resource Planning (ERP) doesn’t have to be
+                complicated. Our custom ERP keeps everything—from finances to
+                people—working together smoothly.
               </p>
               <Link href="/service/details" className="learn-btn">
                 View Details
