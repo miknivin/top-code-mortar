@@ -26,12 +26,17 @@ const Home1ServiceSection = () => {
           >
             <div className="service-card magnetic-item h-100">
               <h3>
-                <Link href="/service/details">Marketing & Automation</Link>
+                <Link href="/service/details/marketing-and-automation">
+                  Marketing & Automation
+                </Link>
               </h3>
               <p>
                 Smart, timely outreach that connects with people effortlessly.
               </p>
-              <Link href="/service/details" className="learn-btn">
+              <Link
+                href="/service/details/marketing-and-automation"
+                className="learn-btn"
+              >
                 View Details
                 <svg
                   width={9}
@@ -55,13 +60,18 @@ const Home1ServiceSection = () => {
           >
             <div className="service-card magnetic-item">
               <h3>
-                <Link href="/service/details">Branding & Design</Link>
+                <Link href="/service/details/branding-and-design">
+                  Branding & Design
+                </Link>
               </h3>
               <p>
                 Visual identity that feels authentic and leaves a lasting
                 impression.
               </p>
-              <Link href="/service/details" className="learn-btn">
+              <Link
+                href="/service/details/branding-and-design"
+                className="learn-btn"
+              >
                 View Details
                 <svg
                   width={9}
@@ -85,10 +95,15 @@ const Home1ServiceSection = () => {
           >
             <div className="service-card magnetic-item">
               <h3>
-                <Link href="/service/details">Media Production</Link>
+                <Link href="/service/details/media-production">
+                  Media Production
+                </Link>
               </h3>
               <p>Stories told through stunning visuals that truly resonate.</p>
-              <Link href="/service/details" className="learn-btn">
+              <Link
+                href="/service/details/media-production"
+                className="learn-btn"
+              >
                 View Details
                 <svg
                   width={9}
@@ -112,10 +127,15 @@ const Home1ServiceSection = () => {
           >
             <div className="service-card magnetic-item">
               <h3>
-                <Link href="/service/details">Web Development</Link>
+                <Link href="/service/details/web-development">
+                  Web Development
+                </Link>
               </h3>
               <p>Beautiful, intuitive platforms built for real-world use.</p>
-              <Link href="/service/details" className="learn-btn">
+              <Link
+                href="/service/details/web-development"
+                className="learn-btn"
+              >
                 View Details
                 <svg
                   width={9}
@@ -139,13 +159,18 @@ const Home1ServiceSection = () => {
           >
             <div className="service-card magnetic-item">
               <h3>
-                <Link href="/service/details">WhatsApp API</Link>
+                <Link href="/service/details/whatsapp-api-integrations">
+                  WhatsApp API
+                </Link>
               </h3>
               <p>
                 Direct, automated conversations that feel personal—powered by
                 smart integration.
               </p>
-              <Link href="/service/details" className="learn-btn">
+              <Link
+                href="/service/details/whatsapp-api-integrations"
+                className="learn-btn"
+              >
                 View Details
                 <svg
                   width={9}
@@ -169,7 +194,7 @@ const Home1ServiceSection = () => {
           >
             <div className="service-card magnetic-item">
               <h3>
-                <Link href="/service/details">
+                <Link href="/service/details/ecommerce-solutions">
                   E-commerce <br />
                   Solutions
                 </Link>
@@ -179,7 +204,10 @@ const Home1ServiceSection = () => {
                 engaging—built to connect with your customers and grow your
                 business.
               </p>
-              <Link href="/service/details" className="learn-btn">
+              <Link
+                href="/service/details/ecommerce-solutions"
+                className="learn-btn"
+              >
                 View Details
                 <svg
                   width={9}
@@ -203,14 +231,14 @@ const Home1ServiceSection = () => {
           >
             <div className="service-card magnetic-item">
               <h3>
-                <Link href="/service/details">ERP Solutions</Link>
+                <Link href="/service/details/erp">ERP Solutions</Link>
               </h3>
               <p>
                 Enterprise Resource Planning (ERP) doesn’t have to be
                 complicated. Our custom ERP keeps everything—from finances to
                 people—working together smoothly.
               </p>
-              <Link href="/service/details" className="learn-btn">
+              <Link href="/service/details/erp" className="learn-btn">
                 View Details
                 <svg
                   width={9}

@@ -11,6 +11,7 @@ import SwiperCore, {
   Pagination,
 } from "swiper";
 import { serviceData } from "@/data/servicesData";
+import Footer1 from "@/components/Footer/Footer1";
 
 SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]);
 
@@ -70,7 +71,7 @@ const ServiceDetailsPage = ({ params }) => {
                 <h1>{service.title}</h1>
                 <ul className="breadcrumb-list">
                   <li>
-                    <a href="/">Home</a>
+                    <Link href="/">Home</Link>
                   </li>
                   <li>
                     <svg
@@ -176,7 +177,9 @@ const ServiceDetailsPage = ({ params }) => {
                 <h2>Service Overview</h2>
                 <span className="line-break" />
                 {service.overview.map((paragraph, index) => (
-                  <p key={index}>{paragraph}</p>
+                  <p key={index} className="mb-2">
+                    {paragraph}
+                  </p>
                 ))}
                 <span className="line-break" />
               </div>
@@ -335,7 +338,7 @@ const ServiceDetailsPage = ({ params }) => {
       </div>
       {/* Service Details Page End */}
 
-      <Home3Footer />
+      <Footer1 />
     </div>
   );
 };

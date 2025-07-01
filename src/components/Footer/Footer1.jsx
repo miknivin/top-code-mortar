@@ -1,3 +1,4 @@
+import { serviceData } from "@/data/servicesData";
 import Link from "next/link";
 import React from "react";
 
@@ -101,34 +102,24 @@ const Footer1 = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-xl-2 col-lg-3 col-sm-6 d-flex justify-content-lg-end">
-              <div className="footer-widget">
-                <div className="widget-title">
-                  <h3>Industries</h3>
+            {serviceData && serviceData.length > 0 && (
+              <div className="col-xl-2 col-lg-3 col-sm-6 d-flex justify-content-lg-end">
+                <div className="footer-widget">
+                  <div className="widget-title">
+                    <h3>Service</h3>
+                  </div>
+                  <ul className="widget-list">
+                    {serviceData.map((service) => (
+                      <li key={service.id}>
+                        <Link href={`/service/details/${service.id}`}>
+                          {service.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <ul className="widget-list">
-                  <li>
-                    <Link href="/industry-details">Finance &amp; Fintech</Link>
-                  </li>
-                  <li>
-                    <Link href="/industry-details">Healthcare &amp; Life</Link>
-                  </li>
-                  <li>
-                    <Link href="/industry-details">Retail &amp; Ecommerce</Link>
-                  </li>
-                  <li>
-                    <Link href="/industry-details">
-                      Government &amp; Public
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/industry-details">
-                      Travel &amp; Hospitality
-                    </Link>
-                  </li>
-                </ul>
               </div>
-            </div>
+            )}
           </div>
         </div>
         <a
