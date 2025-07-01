@@ -106,7 +106,7 @@ const Footer1 = () => {
               <div className="col-xl-2 col-lg-3 col-sm-6 d-flex justify-content-lg-end">
                 <div className="footer-widget">
                   <div className="widget-title">
-                    <h3>Service</h3>
+                    <h3>Services</h3>
                   </div>
                   <ul className="widget-list">
                     {serviceData.map((service) => (

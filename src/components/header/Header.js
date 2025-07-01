@@ -329,7 +329,7 @@ const Header = ({ style = "", fluid }) => {
                               ))}
                             </ul>
                           </li>
-                          <li className="menu-single-item">
+                          {/* <li className="menu-single-item">
                             <div className="menu-title">
                               <h6>
                                 <svg
@@ -393,14 +393,14 @@ const Header = ({ style = "", fluid }) => {
                                 </Link>
                               </li>
                             </ul>
-                          </li>
+                          </li> */}
                         </ul>
                       </div>
                       <div className="col-lg-4">
                         <div className="solution-menu-banner">
                           <div className="banner-content">
                             <h3>
-                              We have Daynamic Team Members that Easily Problem
+                              We have Dynamic Team Members that Easily Problem
                               Solve.
                             </h3>
                             <Link href="/contact" className="primary-btn1">
