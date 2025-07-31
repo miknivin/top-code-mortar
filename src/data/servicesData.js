@@ -10,9 +10,9 @@ export const serviceData = [
       { label: "Conversion-Focused", href: "/service" },
     ],
     sliderImages: [
-      { src: "/assets/img/innerpages/service-details-thumb-img1.jpg", alt: "" },
-      { src: "/assets/img/innerpages/service-details-thumb-img2.jpg", alt: "" },
-      { src: "/assets/img/innerpages/service-details-thumb-img3.jpg", alt: "" },
+      { src: "/assets/img/innerpages/service-details-thumb-img1.png", alt: "" },
+      { src: "/assets/img/innerpages/service-details-thumb-img2.png", alt: "" },
+      { src: "/assets/img/innerpages/service-details-thumb-img3.png", alt: "" },
     ],
     overview: [
       "We build websites that don’t just look good—they work hard for your business. Whether you're a personal brand, small startup, or growing company, we develop fast, mobile-optimized, and conversion-ready websites that help you stand out and scale online. Your website becomes more than a digital brochure—it becomes your most powerful sales tool.",
@@ -113,11 +113,7 @@ export const serviceData = [
       { label: "Automated", href: "/service" },
       { label: "Conversion-Focused", href: "/service" },
     ],
-    sliderImages: [
-      { src: "/assets/img/innerpages/service-details-thumb-img1.jpg", alt: "" },
-      { src: "/assets/img/innerpages/service-details-thumb-img2.jpg", alt: "" },
-      { src: "/assets/img/innerpages/service-details-thumb-img3.jpg", alt: "" },
-    ],
+    sliderImages: [],
     overview: [
       "We empower businesses of all sizes—individuals, startups, and corporates—by combining paid ads, organic growth, and smart automation. From Meta Ads, Google Ads, and YouTube campaigns to SEO strategies and engaging social media content, we help you reach the right people at the right time.",
       "With automation tools like chatbots, email workflows, WhatsApp marketing, and social scheduling, we ensure your brand stays visible, responsive, and efficient—without the manual grind. Our approach is built to save time, increase engagement, and drive measurable growth.",
@@ -217,11 +213,7 @@ export const serviceData = [
       { label: "Strategic", href: "/service" },
       { label: "Identity-Focused", href: "/service" },
     ],
-    sliderImages: [
-      { src: "/assets/img/innerpages/service-details-thumb-img1.jpg", alt: "" },
-      { src: "/assets/img/innerpages/service-details-thumb-img2.jpg", alt: "" },
-      { src: "/assets/img/innerpages/service-details-thumb-img3.jpg", alt: "" },
-    ],
+    sliderImages: [],
     overview: [
       "We help individuals, startups, and businesses build brands that leave a lasting impression. From logo creation to complete visual identity systems, we combine creativity with strategy to make sure your brand looks, feels, and communicates with clarity. Whether you're launching something new or reimagining your brand, we craft designs that speak directly to your audience.",
       "From colors and typography to social media creatives and brand kits, we ensure every touchpoint is visually aligned and emotionally engaging. Our goal is to help you stand out in a crowded market with a brand that's both beautiful and meaningful.",
@@ -320,11 +312,7 @@ export const serviceData = [
       { label: "Targeted", href: "/service" },
       { label: "Results-Driven", href: "/service" },
     ],
-    sliderImages: [
-      { src: "/assets/img/innerpages/service-details-thumb-img1.jpg", alt: "" },
-      { src: "/assets/img/innerpages/service-details-thumb-img2.jpg", alt: "" },
-      { src: "/assets/img/innerpages/service-details-thumb-img3.jpg", alt: "" },
-    ],
+    sliderImages: [],
     overview: [
       "We specialize in media production designed to sell, promote, and elevate brands. Whether you're launching a product, building awareness, or scaling a campaign, our videos and visuals are created with a clear marketing purpose. From ad campaigns and corporate shoots to product showcases and brand stories, we craft content that captures attention and drives conversions.",
 
@@ -425,11 +413,7 @@ export const serviceData = [
       { label: "Scalable", href: "/service" },
       { label: "Goal-Driven", href: "/service" },
     ],
-    sliderImages: [
-      { src: "/assets/img/innerpages/service-details-thumb-img1.jpg", alt: "" },
-      { src: "/assets/img/innerpages/service-details-thumb-img2.jpg", alt: "" },
-      { src: "/assets/img/innerpages/service-details-thumb-img3.jpg", alt: "" },
-    ],
+    sliderImages: [],
     overview: [
       "We help businesses connect faster and smarter with customers through official WhatsApp API & related integrations. Whether you need automated replies, lead follow-ups, or broadcast messaging, we set up powerful two-way communication that feels personal—yet runs on autopilot.",
 
@@ -531,11 +515,7 @@ export const serviceData = [
       { label: "Sales-Driven", href: "/service" },
       { label: "Highly Customisable", href: "/service" },
     ],
-    sliderImages: [
-      { src: "/assets/img/innerpages/service-details-thumb-img1.jpg", alt: "" },
-      { src: "/assets/img/innerpages/service-details-thumb-img2.jpg", alt: "" },
-      { src: "/assets/img/innerpages/service-details-thumb-img3.jpg", alt: "" },
-    ],
+    sliderImages: [],
     overview: [
       "We help individuals, startups, and established businesses launch and scale their online stores with ease. From setting up your e-commerce website to driving traffic through targeted ads and automating customer engagement, we take care of the entire journey—so you can focus on selling.",
 
@@ -637,11 +617,7 @@ export const serviceData = [
       { label: "Scalable", href: "/service" },
       { label: "Business-Ready", href: "/service" },
     ],
-    sliderImages: [
-      { src: "/assets/img/innerpages/service-details-thumb-img1.jpg", alt: "" },
-      { src: "/assets/img/innerpages/service-details-thumb-img2.jpg", alt: "" },
-      { src: "/assets/img/innerpages/service-details-thumb-img3.jpg", alt: "" },
-    ],
+    sliderImages: [],
     overview: [
       "We provide flexible ERP systems designed to match the way you work. From sales, inventory, and HR to customer management and finance—we help businesses centralize operations and run smarter. What makes us different? We build custom CRM modules inside your ERP, tailored to your workflow, and designed to scale as you grow.",
 

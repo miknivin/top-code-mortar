@@ -58,96 +58,106 @@ const ServiceDetailsPage = ({ params }) => {
     );
   }
 
+  // Check if sliderImages exist and are non-empty
+  const hasSliderImages =
+    service.sliderImages && service.sliderImages.length > 0;
+
   return (
     <div>
       <Header />
 
-      {/* Breadcrumb Section Start */}
-      <div className="breadcrumb-section mb-130">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-xl-8 col-lg-10">
-              <div className="banner-content">
-                <h1>{service.title}</h1>
-                <ul className="breadcrumb-list">
-                  <li>
-                    <Link href="/">Home</Link>
-                  </li>
-                  <li>
-                    <svg
-                      width={25}
-                      height={6}
-                      viewBox="0 0 25 6"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M5 2.5L0 0.113249V5.88675L5 3.5V2.5ZM20 3.5L25 5.88675V0.113249L20 2.5V3.5ZM4.5 3.5H20.5V2.5H4.5V3.5Z" />
-                    </svg>
-                    {service.title}
-                  </li>
-                </ul>
+      {/* Breadcrumb Section Start - Only render if sliderImages exist */}
+      {hasSliderImages && (
+        <div className="breadcrumb-section mb-130">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-xl-8 col-lg-10">
+                <div className="banner-content">
+                  <h1>{service.title}</h1>
+                  <ul className="breadcrumb-list">
+                    <li>
+                      <Link href="/">Home</Link>
+                    </li>
+                    <li>
+                      <svg
+                        width={25}
+                        height={6}
+                        viewBox="0 0 25 6"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M5 2.5L0 0.113249V5.88675L5 3.5V2.5ZM20 3.5L25 5.88675V0.113249L20 2.5V3.5ZM4.5 3.5H20.5V2.5H4.5V3.5Z" />
+                      </svg>
+                      {service.title}
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
       {/* Breadcrumb Section End */}
       {/* Service Details Page Start */}
       <div className="service-details-page mb-130">
         <div className="container">
           <div className="details-content-wrap mb-130">
             <div className="post-thumb mb-70">
-              <Swiper
-                {...settings}
-                className="swiper service-details-post-slider"
-              >
-                <div className="swiper-wrapper">
-                  {service.sliderImages.map((image, index) => (
-                    <SwiperSlide key={index} className="swiper-slide">
-                      <img src={image.src} alt={image.alt} />
-                    </SwiperSlide>
-                  ))}
-                </div>
-              </Swiper>
-              <div className="slider-btn-grp">
-                <div
-                  style={{ cursor: "pointer" }}
-                  className="slider-btn post-slider-prev"
-                >
-                  <svg
-                    width={14}
-                    height={14}
-                    viewBox="0 0 14 14"
-                    xmlns="http://www.w3.org/2000/svg"
+              {hasSliderImages && (
+                <>
+                  <Swiper
+                    {...settings}
+                    className="swiper service-details-post-slider"
                   >
-                    <g>
-                      <path
-                        d="M11.002 13.0005C10.002 10.5005 5.00195 8.00049 2.00195 7.00049C5.00195 6.00049 9.50195 4.50049 11.002 1.00049"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                      />
-                    </g>
-                  </svg>
-                </div>
-                <div
-                  style={{ cursor: "pointer" }}
-                  className="slider-btn post-slider-next"
-                >
-                  <svg
-                    width={14}
-                    height={14}
-                    viewBox="0 0 14 14"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g>
-                      <path
-                        d="M2.99805 13.0005C3.99805 10.5005 8.99805 8.00049 11.998 7.00049C8.99805 6.00049 4.49805 4.50049 2.99805 1.00049"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                      />
-                    </g>
-                  </svg>
-                </div>
-              </div>
+                    <div className="swiper-wrapper">
+                      {service.sliderImages.map((image, index) => (
+                        <SwiperSlide key={index} className="swiper-slide">
+                          <img src={image.src} alt={image.alt} />
+                        </SwiperSlide>
+                      ))}
+                    </div>
+                  </Swiper>
+                  <div className="slider-btn-grp">
+                    <div
+                      style={{ cursor: "pointer" }}
+                      className="slider-btn post-slider-prev"
+                    >
+                      <svg
+                        width={14}
+                        height={14}
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g>
+                          <path
+                            d="M11.002 13.0005C10.002 10.5005 5.00195 8.00049 2.00195 7.00049C5.00195 6.00049 9.50195 4.50049 11.002 1.00049"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div
+                      style={{ cursor: "pointer" }}
+                      className="slider-btn post-slider-next"
+                    >
+                      <svg
+                        width={14}
+                        height={14}
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g>
+                          <path
+                            d="M2.99805 13.0005C3.99805 10.5005 8.99805 8.00049 11.998 7.00049C8.99805 6.00049 4.49805 4.50049 2.99805 1.00049"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </>
+              )}
             </div>
             <div className="row justify-content-center">
               <div className="col-xl-8 col-lg-10">
@@ -209,15 +219,6 @@ const ServiceDetailsPage = ({ params }) => {
                 </ul>
               </div>
             </div>
-            <div className="img-grp">
-              <div className="row g-4">
-                {service.imageGroup1.map((image, index) => (
-                  <div key={index} className={image.className}>
-                    <img src={image.src} alt={image.alt} />
-                  </div>
-                ))}
-              </div>
-            </div>
             <span className="line-break" />
             <span className="line-break" />
             <span className="line-break" />
@@ -257,15 +258,6 @@ const ServiceDetailsPage = ({ params }) => {
             <span className="line-break" />
             <span className="line-break" />
             <span className="line-break" />
-            <div className="img-grp">
-              <div className="row g-4">
-                {service.imageGroup2.map((image, index) => (
-                  <div key={index} className={image.className}>
-                    <img src={image.src} alt={image.alt} />
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
           <div className="row justify-content-center">
             <div className="col-lg-12">

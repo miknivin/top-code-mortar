@@ -157,7 +157,7 @@ const Home2TestimonialSection = () => {
                               <li><i className="bi bi-star-fill" /></li>
                               <li><i className="bi bi-star-half" /></li>
                             </ul>
-                            <p>We were thoroughly impressed with the professionalism and dedication of Mortar. From our initial consultation to the final delivery.</p>
+                            <p>We were thoroughly impressed with the professionalism and dedication of Topcode. From our initial consultation to the final delivery.</p>
                           </div>
                           <div className="author-area">
                             <h5>Hanry Macle</h5>
@@ -199,7 +199,7 @@ const Home2TestimonialSection = () => {
                               <li><i className="bi bi-star-fill" /></li>
                               <li><i className="bi bi-star-half" /></li>
                             </ul>
-                            <p>The team at Mortar was fantastic to work with! They maintained open and clear communication throughout the entire process.</p>
+                            <p>The team at Topcode was fantastic to work with! They maintained open and clear communication throughout the entire process.</p>
                           </div>
                           <div className="author-area">
                             <h5>Miecle Maiker</h5>

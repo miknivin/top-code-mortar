@@ -109,7 +109,6 @@ const Header = ({ style = "", fluid }) => {
     "/checkout",
     "/product-details",
     "/faq",
-    "/contact",
   ];
   const homePaths = [
     "/",
@@ -152,7 +151,8 @@ const Header = ({ style = "", fluid }) => {
     (path) =>
       pathname.startsWith(path) &&
       !pathname.startsWith("/about") &&
-      !pathname.startsWith("/service")
+      !pathname.startsWith("/service") &&
+      !pathname.startsWith("/contact")
   );
   return (
     <header className="header-area style-1">

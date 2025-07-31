@@ -10,13 +10,12 @@ import "../../public/assets/css/nice-select.css";
 import "../../public/assets/css/slick.css";
 import "../../public/assets/css/style.css";
 import { useEffect } from "react";
-import { useWow } from '@/customHooks/useWow';
+import { useWow } from "@/customHooks/useWow";
 import useMagneticHover from "@/customHooks/useMagneticHover";
 import { dmsans, suseSans, lora } from "@/fonts/font";
-import { usePathname } from 'next/navigation'; // Import usePathname
+import { usePathname } from "next/navigation"; // Import usePathname
 
-
-import Script from 'next/script';
+import Script from "next/script";
 
 import ThemeSwitch from "@/components/common/Theme";
 import ScrollCircleProgress from "@/utils/ScrollCircleProgess";
@@ -24,12 +23,11 @@ import useButtonHoverEffect from "@/customHooks/useButtonHoverEffect";
 import SmoothPageScroll from "@/utils/SmoothPageScroll";
 import AnimatedCursor from "react-animated-cursor";
 
-
 export default function RootLayout({ children }) {
   const pathname = usePathname(); // Get the current pathname
 
   useMagneticHover();
-  useWow()
+  useWow();
   useButtonHoverEffect();
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
@@ -47,23 +45,39 @@ export default function RootLayout({ children }) {
         />
         <meta name="description" content="Your description here" />
         <meta name="keywords" content="next.js, SEO, meta tags" />
-        <title>Mortar - IT Startup & Digital Agency Template.</title>
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+        <title>Topcode - IT Startup & Digital Agency Template.</title>
+        <link
+          href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+          rel="stylesheet"
+        />
 
         {/* GSAP Scripts */}
-        <Script src="/assets/js/gsap.min.js" strategy="beforeInteractive" onLoad={() => { window.gsap.registerPlugin(window.ScrollTrigger); }} />
-        <Script src="/assets/js/ScrollTrigger.min.js" strategy="beforeInteractive" />
-        <Script src="/assets/js/SplitText.min.js" strategy="beforeInteractive" />
+        <Script
+          src="/assets/js/gsap.min.js"
+          strategy="beforeInteractive"
+          onLoad={() => {
+            window.gsap.registerPlugin(window.ScrollTrigger);
+          }}
+        />
+        <Script
+          src="/assets/js/ScrollTrigger.min.js"
+          strategy="beforeInteractive"
+        />
+        <Script
+          src="/assets/js/SplitText.min.js"
+          strategy="beforeInteractive"
+        />
       </head>
-      <body id="body" className={`tt-magic-cursor ${lora.variable} ${dmsans.variable} ${suseSans.variable}`}>
-
+      <body
+        id="body"
+        className={`tt-magic-cursor ${lora.variable} ${dmsans.variable} ${suseSans.variable}`}
+      >
         <SmoothPageScroll />
         {children}
         <AnimatedCursor
           innerSize={16}
           outerSize={16}
-
-          color='88, 65, 216'
+          color="88, 65, 216"
           outerAlpha={0.2}
           innerScale={0.7}
           outerScale={3}
@@ -74,17 +88,17 @@ export default function RootLayout({ children }) {
             zIndex: 999999,
           }}
           clickables={[
-            'a',
+            "a",
             'input[type="text"]',
             'input[type="email"]',
             'input[type="number"]',
             'input[type="submit"]',
             'input[type="image"]',
-            'label[for]',
-            'select',
-            'textarea',
-            'button',
-            '.link'
+            "label[for]",
+            "select",
+            "textarea",
+            "button",
+            ".link",
           ]}
         />
 

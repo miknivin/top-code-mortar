@@ -404,7 +404,7 @@ const PortfolioDetailsPage = () => {
               <div className="col-xl-5 col-lg-6">
                 <div className="testimonial-area">
                   <p>
-                    Working with Mortar was a game-changer for our business.
+                    Working with Topcode was a game-changer for our business.
                     Their team helped us achieve our digital goals beyond
                     expectations.
                   </p>

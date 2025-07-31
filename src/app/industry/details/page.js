@@ -91,7 +91,7 @@ const page = () => {
                                             <h4>This era laid the groundwork for a highly connected, always-online consumer culture.</h4>
                                             <div className="author-area">
                                                 <h6>Dr. Samuel Nathan</h6>
-                                                <span>CEO at Mortar</span>
+                                                <span>CEO at Topcode</span>
                                             </div>
                                         </div>
                                         <svg className="quote" width={100} height={74} viewBox="0 0 100 74" xmlns="http://www.w3.org/2000/svg">

@@ -34,7 +34,7 @@ const Home1WhyUsSection = () => {
             <div className="case-study-card magnetic-item">
               <div className="case-study-img-wrap">
                 <div className="case-study-img">
-                  <img src="/assets/img/home1/case-study-img3.jpg" alt="" />
+                  <img src="/assets/img/home1/case-study-img3.png" alt="" />
                 </div>
               </div>
               <div className="case-study-card-content">
