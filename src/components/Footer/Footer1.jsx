@@ -21,10 +21,10 @@ const Footer1 = () => {
                         alt=""
                       />
                     </div>
-                    <div className="content">
+                    {/* <div className="content">
                       <span>Call 24/7 Hours</span>
                       <a href="tel:+997636844563">+99-763 684 4563</a>
-                    </div>
+                    </div> */}
                   </li>
                   <li className="single-contact">
                     <div className="icon">
@@ -35,7 +35,9 @@ const Footer1 = () => {
                     </div>
                     <div className="content">
                       <span>Send Us Mail</span>
-                      <a href="mailto:info@example.com">info@example.com</a>
+                      <a href="mailto:support@topcodemedia.com">
+                        support@topcodemedia.com
+                      </a>
                     </div>
                   </li>
                 </ul>
@@ -86,16 +88,13 @@ const Footer1 = () => {
                     <Link href="/about">About us</Link>
                   </li>
                   <li>
-                    <Link href="/team">Our Team</Link>
+                    <Link href="/service">Our Services</Link>
                   </li>
-                  <li>
-                    <Link href="/portfolio">Our Portfolio</Link>
-                  </li>
-                  <li>
+                  {/* <li>
                     <Link href="/career">
                       Careers <span>Hiring</span>
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="/contact">Contact Us</Link>
                   </li>
@@ -122,7 +121,7 @@ const Footer1 = () => {
             )}
           </div>
         </div>
-        <a
+        {/* <a
           href="/assets/company-desk.pdf"
           className="file-download-btn"
           download="company-desk.pdf"
@@ -141,7 +140,7 @@ const Footer1 = () => {
             </svg>
           </div>
           Company Desk
-        </a>
+        </a> */}
         <div
           className="logo-and-sevice-menu-wrap"
           style={{ width: "fit-content" }}

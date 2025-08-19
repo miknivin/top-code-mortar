@@ -3,6 +3,10 @@ export const serviceData = [
   {
     id: "web-development",
     title: "Web Development",
+    veryShortDesc:
+      "Fast, mobile-ready websites that grow your brand and boost sales.",
+    serviceImage:
+      "https://ik.imagekit.io/c1jhxlxiy/2.png?updatedAt=1755628784301",
     tags: [
       { label: "Responsive", href: "/service" },
       { label: "User-Centric", href: "/service" },
@@ -107,6 +111,10 @@ export const serviceData = [
   {
     id: "marketing-and-automation",
     title: "Marketing & Automation",
+    serviceImage:
+      "https://ik.imagekit.io/c1jhxlxiy/services.png?updatedAt=1755630856846",
+    veryShortDesc:
+      "Smart ads, SEO & automation to boost growth and save your time.",
     tags: [
       { label: "Custom", href: "/service" },
       { label: "Targeted", href: "/service" },
@@ -214,6 +222,9 @@ export const serviceData = [
       { label: "Identity-Focused", href: "/service" },
     ],
     sliderImages: [],
+    veryShortDesc:
+      "Creative branding & design that makes your business stand out.",
+    serviceImage: "https://ik.imagekit.io/c1jhxlxiy/1.png?updatedAt=1755628784134",
     overview: [
       "We help individuals, startups, and businesses build brands that leave a lasting impression. From logo creation to complete visual identity systems, we combine creativity with strategy to make sure your brand looks, feels, and communicates with clarity. Whether you're launching something new or reimagining your brand, we craft designs that speak directly to your audience.",
       "From colors and typography to social media creatives and brand kits, we ensure every touchpoint is visually aligned and emotionally engaging. Our goal is to help you stand out in a crowded market with a brand that's both beautiful and meaningful.",
@@ -312,6 +323,10 @@ export const serviceData = [
       { label: "Targeted", href: "/service" },
       { label: "Results-Driven", href: "/service" },
     ],
+    serviceImage:
+      "https://ik.imagekit.io/c1jhxlxiy/3.png?updatedAt=1755628784155",
+    veryShortDesc:
+      "High-impact videos & visuals that sell, promote, and grow brands",
     sliderImages: [],
     overview: [
       "We specialize in media production designed to sell, promote, and elevate brands. Whether you're launching a product, building awareness, or scaling a campaign, our videos and visuals are created with a clear marketing purpose. From ad campaigns and corporate shoots to product showcases and brand stories, we craft content that captures attention and drives conversions.",
@@ -413,6 +428,10 @@ export const serviceData = [
       { label: "Scalable", href: "/service" },
       { label: "Goal-Driven", href: "/service" },
     ],
+    serviceImage:
+      "https://ik.imagekit.io/c1jhxlxiy/4.png?updatedAt=1755628783956",
+    veryShortDesc:
+      "Automated WhatsApp solutions for faster, smarter customer connect",
     sliderImages: [],
     overview: [
       "We help businesses connect faster and smarter with customers through official WhatsApp API & related integrations. Whether you need automated replies, lead follow-ups, or broadcast messaging, we set up powerful two-way communication that feels personal—yet runs on autopilot.",
@@ -516,6 +535,10 @@ export const serviceData = [
       { label: "Highly Customisable", href: "/service" },
     ],
     sliderImages: [],
+    veryShortDesc:
+      "End-to-end ecommerce setup, ads & automation to boost your sales.",
+    serviceImage:
+      "https://ik.imagekit.io/c1jhxlxiy/6.png?updatedAt=1755628784368",
     overview: [
       "We help individuals, startups, and established businesses launch and scale their online stores with ease. From setting up your e-commerce website to driving traffic through targeted ads and automating customer engagement, we take care of the entire journey—so you can focus on selling.",
 
@@ -617,6 +640,10 @@ export const serviceData = [
       { label: "Scalable", href: "/service" },
       { label: "Business-Ready", href: "/service" },
     ],
+    veryShortDesc:
+      "Flexible ERP solutions to centralize, automate & scale your business.",
+    serviceImage:
+      "https://ik.imagekit.io/c1jhxlxiy/7.png?updatedAt=1755628784232",
     sliderImages: [],
     overview: [
       "We provide flexible ERP systems designed to match the way you work. From sales, inventory, and HR to customer management and finance—we help businesses centralize operations and run smarter. What makes us different? We build custom CRM modules inside your ERP, tailored to your workflow, and designed to scale as you grow.",

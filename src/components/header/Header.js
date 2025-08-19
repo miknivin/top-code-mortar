@@ -181,7 +181,7 @@ const Header = ({ style = "", fluid }) => {
             <div className="content">
               <span>Our Support</span>
               <h6>
-                <a href="tel:+997636844568">+99-763 684 4568 </a>
+                <a href="tel:+997636844568">support@topcodemedia.com </a>
               </h6>
             </div>
           </div>
