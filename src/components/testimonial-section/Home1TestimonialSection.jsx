@@ -147,7 +147,7 @@ const Home1TestimonialSection = () => {
             </div>
           </div>
         </div>
-        <ul
+        {/* <ul
           className="rating-list wow animate fadeInUp"
           data-wow-delay="200ms"
           data-wow-duration="1500ms"
@@ -222,7 +222,7 @@ const Home1TestimonialSection = () => {
               </div>
             </a>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </div>
   );
