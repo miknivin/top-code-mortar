@@ -121,7 +121,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Home1ParnerSection />
+      {/* <Home1ParnerSection /> */}
       <Home1SeatureSection />
       <Home1processSection />
       {/* <IndustriesSection /> */}
