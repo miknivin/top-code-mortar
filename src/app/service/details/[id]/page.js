@@ -166,7 +166,7 @@ const ServiceDetailsPage = ({ params }) => {
                   <ul className="tag-list">
                     {service.tags.map((tag, index) => (
                       <li key={index}>
-                        <Link href={tag.href}>{tag.label}</Link>
+                        <div className="tag-button" href={"#"}>{tag.label}</div>
                       </li>
                     ))}
                   </ul>
