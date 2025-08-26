@@ -1,10 +1,63 @@
 "use client";
 import ThrowableItems from "@/utils/ThrowableItems";
 import Counter from "../common/Counter";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import { serviceData } from "@/data/servicesData";
 
 const Home1ContactSection = () => {
   const ref3 = useRef(null);
+  const [formStatus, setFormStatus] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    const services = serviceData
+      .filter((_, index) => formData.getAll("services").includes(_.title))
+      .map((service) => service.title);
+
+    const data = {
+      fullName: formData.get("fullName"),
+      company: formData.get("company"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      services: services,
+      message: formData.get("message"),
+    };
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setFormStatus({
+          type: "success",
+          message: "Message sent successfully!",
+        });
+        form.reset();
+      } else {
+        setFormStatus({
+          type: "error",
+          message: result.error || "Failed to send message",
+        });
+      }
+    } catch (error) {
+      setFormStatus({
+        type: "error",
+        message: "An error occurred while sending the message",
+      });
+    }
+  };
+
   return (
     <>
       <div className="home1-contact-section mb-80">
@@ -48,29 +101,6 @@ const Home1ContactSection = () => {
                         </div>
                       </div>
                     </li>
-                    {/* <li className="single-contact">
-                                            <h5>Call Us</h5>
-                                            <div className="contact-content-wrap">
-                                                <div className="icon">
-                                                    <img src="/assets/img/home1/icon/contact-call-icon.svg" alt="" />
-                                                </div>
-                                                <div className="content">
-                                                    <span>Call 24/7 Hours</span>
-                                                    <a href="tel:+997636844563">+99-763 684 4563</a>
-                                                </div>
-                                            </div>
-                                        </li> */}
-                    {/* <li className="single-contact location">
-                                            <h5>Visit Office</h5>
-                                            <div className="contact-content-wrap">
-                                                <div className="icon">
-                                                    <img src="/assets/img/home1/icon/contact-location-icon.svg" alt="" />
-                                                </div>
-                                                <div className="content">
-                                                    <a href="https://www.google.com/maps">1234 Innovation Drive, Suite 500 San Francisco, CA 94107 United States</a>
-                                                </div>
-                                            </div>
-                                        </li> */}
                   </ul>
                 </div>
               </div>
@@ -81,132 +111,55 @@ const Home1ContactSection = () => {
               data-wow-duration="1500ms"
             >
               <div className="contact-form-wrap">
-                <form>
+                <form onSubmit={handleSubmit}>
                   <div className="row g-4 mb-40">
                     <div className="col-md-6">
                       <div className="form-inner">
                         <label>Full name</label>
-                        <input type="text" />
+                        <input type="text" name="fullName" />
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="form-inner">
                         <label>Company</label>
-                        <input type="text" />
+                        <input type="text" name="company" />
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="form-inner">
                         <label>Company Email</label>
-                        <input type="email" />
+                        <input type="email" name="email" />
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="form-inner">
                         <label>Phone</label>
-                        <input type="text" />
+                        <input type="text" name="phone" />
                       </div>
                     </div>
                     <div className="col-md-12">
                       <div className="form-inner2">
                         <label>How can We Assist You?</label>
                         <ul>
-                          <li>
-                            <div className="form-check">
-                              <input
-                                className="form-check-input"
-                                type="checkbox"
-                                defaultValue
-                                id="contactCheck"
-                              />
-                              <label
-                                className="form-check-label"
-                                htmlFor="contactCheck"
-                              >
-                                IT Consulitng
-                              </label>
-                            </div>
-                          </li>
-                          <li>
-                            <div className="form-check">
-                              <input
-                                className="form-check-input"
-                                type="checkbox"
-                                defaultValue
-                                id="contactCheck2"
-                              />
-                              <label
-                                className="form-check-label"
-                                htmlFor="contactCheck2"
-                              >
-                                UI/UX Design
-                              </label>
-                            </div>
-                          </li>
-                          <li>
-                            <div className="form-check">
-                              <input
-                                className="form-check-input"
-                                type="checkbox"
-                                defaultValue
-                                id="contactCheck3"
-                              />
-                              <label
-                                className="form-check-label"
-                                htmlFor="contactCheck3"
-                              >
-                                Cloud Solution
-                              </label>
-                            </div>
-                          </li>
-                          <li>
-                            <div className="form-check">
-                              <input
-                                className="form-check-input"
-                                type="checkbox"
-                                defaultValue
-                                id="contactCheck4"
-                              />
-                              <label
-                                className="form-check-label"
-                                htmlFor="contactCheck4"
-                              >
-                                AI &amp; Machine Learning
-                              </label>
-                            </div>
-                          </li>
-                          <li>
-                            <div className="form-check">
-                              <input
-                                className="form-check-input"
-                                type="checkbox"
-                                defaultValue
-                                id="contactCheck5"
-                              />
-                              <label
-                                className="form-check-label"
-                                htmlFor="contactCheck5"
-                              >
-                                Technical Support
-                              </label>
-                            </div>
-                          </li>
-                          <li>
-                            <div className="form-check">
-                              <input
-                                className="form-check-input"
-                                type="checkbox"
-                                defaultValue
-                                id="contactCheck6"
-                              />
-                              <label
-                                className="form-check-label"
-                                htmlFor="contactCheck6"
-                              >
-                                DevOps Services
-                              </label>
-                            </div>
-                          </li>
+                          {serviceData.map((service) => (
+                            <li key={service.title}>
+                              <div className="form-check">
+                                <input
+                                  className="form-check-input"
+                                  type="checkbox"
+                                  value={service.title}
+                                  name="services"
+                                  id={service.title}
+                                />
+                                <label
+                                  className="form-check-label"
+                                  htmlFor={service.title}
+                                >
+                                  {service.title}
+                                </label>
+                              </div>
+                            </li>
+                          ))}
                         </ul>
                       </div>
                     </div>
@@ -214,12 +167,18 @@ const Home1ContactSection = () => {
                       <div className="form-inner">
                         <label>Message</label>
                         <textarea
+                          name="message"
                           placeholder="Write your message"
                           defaultValue={""}
                         />
                       </div>
                     </div>
                   </div>
+                  {formStatus && (
+                    <div className={`alert alert-${formStatus.type} mb-3`}>
+                      {formStatus.message}
+                    </div>
+                  )}
                   <button type="submit" className="primary-btn1">
                     <span>
                       Submit

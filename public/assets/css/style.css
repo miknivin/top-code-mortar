@@ -17863,14 +17863,14 @@ header.style-7 .primary-btn3.four svg {
 .testimonial-card .testimonial-content p {
   color: var(--text-color);
   font-family: var(--font-lora);
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 500;
   line-height: 1.3;
   margin-bottom: 0;
 }
 @media (max-width: 1399px) {
   .testimonial-card .testimonial-content p {
-    font-size: 27px;
+    font-size: 26px;
   }
 }
 @media (max-width: 991px) {

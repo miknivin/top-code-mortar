@@ -17,6 +17,7 @@ import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Counter from "@/components/common/Counter";
 import Link from "next/link";
 import Footer1 from "@/components/Footer/Footer1";
+import Home1TestimonialSection from "@/components/testimonial-section/Home1TestimonialSection";
 SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]);
 const AboutPage = () => {
   const [isOpenimg, setOpenimg] = useState({
@@ -228,16 +229,25 @@ const AboutPage = () => {
                   <p>
                     We’re a <span>creative, performance-focused team</span> that
                     combines
-                    <span> design, marketing, and technology</span> to bring your
-                    ideas to life. Whether you’re a startup or an established
-                    business, we create solutions that fit your <span>specific goals
-                    and challenges.</span>
+                    <span> design, marketing, and technology</span> to bring
+                    your ideas to life. Whether you’re a startup or an
+                    established business, we create solutions that fit your{" "}
+                    <span>specific goals and challenges.</span>
                   </p>
                   <p>
-                   We collaborate closely with you to deliver practical results by <span>mixing innovation with clear strategy</span>. Our focus is simple — helping your business grow with real impact.
+                    We collaborate closely with you to deliver practical results
+                    by <span>mixing innovation with clear strategy</span>. Our
+                    focus is simple — helping your business grow with real
+                    impact.
                   </p>
-                  <p style={{marginTop:"16px"}}>
-                    We specialize in <span>Marketing & Automation, Branding & Design, Media Production, and Web Development</span> —but what we really do is help you attract, engage, and convert more of the right customers.
+                  <p style={{ marginTop: "16px" }}>
+                    We specialize in{" "}
+                    <span>
+                      Marketing & Automation, Branding & Design, Media
+                      Production, and Web Development
+                    </span>{" "}
+                    —but what we really do is help you attract, engage, and
+                    convert more of the right customers.
                   </p>
                   <Link
                     href="/contact"
@@ -264,7 +274,7 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <div className="about-page-counter-section">
+      {/* <div className="about-page-counter-section">
         <div className="container">
           <div className="counter-wrapper">
             <div className="row gy-md-5 gy-4">
@@ -334,7 +344,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="about-page-feature-section mb-130">
         <div className="container">
           <div
@@ -369,10 +379,11 @@ const AboutPage = () => {
               <div className="single-feature">
                 <h4>
                   Adaptive &amp; <br />
-                  Agile 
+                  Agile
                 </h4>
                 <p>
-                  We stay flexible and quick to respond to changing market trends and client needs.
+                  We stay flexible and quick to respond to changing market
+                  trends and client needs.
                 </p>
               </div>
             </div>
@@ -383,11 +394,13 @@ const AboutPage = () => {
             >
               <div className="single-feature">
                 <h4>
-                  Strategic &amp;<br />
+                  Strategic &amp;
+                  <br />
                   Sustainable
                 </h4>
                 <p>
-                  We leverage the latest tools and platforms to create efficient and cutting-edge solutions.
+                  We leverage the latest tools and platforms to create efficient
+                  and cutting-edge solutions.
                 </p>
               </div>
             </div>
@@ -402,7 +415,8 @@ const AboutPage = () => {
                   Reliability
                 </h4>
                 <p>
-                  We believe in clear communication and building honest, lasting relationships with clients.
+                  We believe in clear communication and building honest, lasting
+                  relationships with clients.
                 </p>
               </div>
             </div>
@@ -436,7 +450,7 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <div className="about-page-team-section mb-130">
+      {/* <div className="about-page-team-section mb-130">
         <div className="container">
           <div className="row align-items-lg-end mb-70">
             <div className="col-lg-4">
@@ -849,7 +863,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="about-page-gallery-section mb-130">
         <div className="container">
           <div className="row mb-70">
@@ -862,10 +876,17 @@ const AboutPage = () => {
                 <div className="section-title three white">
                   <h2>Collective of Creative Thinkers.</h2>
                   <p>
-                    At our core, we’re a team of passionate creatives, strategists, and tech lovers who believe in the power of bold ideas and smart execution. We don’t just work for businesses—we work with people, bringing brands to life through seamless marketing, impactful design, stunning media, and user-first web experiences.
+                    At our core, we’re a team of passionate creatives,
+                    strategists, and tech lovers who believe in the power of
+                    bold ideas and smart execution. We don’t just work for
+                    businesses—we work with people, bringing brands to life
+                    through seamless marketing, impactful design, stunning
+                    media, and user-first web experiences.
                   </p>
                   <p>
-                    Whether you’re a startup finding your voice or an established brand ready for the next leap, we’re here to make your message matter.
+                    Whether you’re a startup finding your voice or an
+                    established brand ready for the next leap, we’re here to
+                    make your message matter.
                   </p>
                 </div>
               </div>
@@ -1034,7 +1055,8 @@ const AboutPage = () => {
       </div>
       <AwardListSection />
       <Home3PartnerSection />
-      <div className="about-page-testimonial-section">
+      <Home1TestimonialSection />
+      {/* <div className="about-page-testimonial-section">
         <div className="container">
           <div
             className="row justify-content-center mb-70 wow animate fadeInDown"
@@ -1326,7 +1348,7 @@ const AboutPage = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <Footer1 />
     </>

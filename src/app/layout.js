@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
         />
         <meta name="description" content="Your description here" />
         <meta name="keywords" content="next.js, SEO, meta tags" />
-        <title>Topcode - IT Startup & Digital Agency Template.</title>
+        <title>Topcode - Complete Growth Solutions.</title>
         <link
           href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
           rel="stylesheet"

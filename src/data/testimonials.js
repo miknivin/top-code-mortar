@@ -50,23 +50,23 @@ export const testimonials = [
     },
     year: "Clients in 2025",
   },
-  {
-    name: "Beauty Queen Ladies Salon",
-    authorImg: "/assets/img/home1/testimonial-author-bq.png", // Replace with actual image
-    rating: [
-      "bi bi-star-fill",
-      "bi bi-star-fill",
-      "bi bi-star-fill",
-      "bi bi-star-fill",
-      "bi bi-star-half",
-    ],
-    text: "They guided us with a clear strategy and affordable solutions. We never imagined such rapid growth — within 6 months, we had an unexpected influx of clients, expanded our team, and took on more space. It truly feels like a miracle.",
-    companyLogo: {
-      light: "/assets/img/home1/testimonial-company-logo-beauty-queen.png", // Replace with actual image
-      dark: "/assets/img/home1/testimonial-company-logo-beauty-queen-white.png", // Replace with actual image
-    },
-    year: "Clients in 2025",
-  },
+  // {
+  //   name: "Beauty Queen Ladies Salon",
+  //   authorImg: "/assets/img/home1/testimonial-author-bq.png", // Replace with actual image
+  //   rating: [
+  //     "bi bi-star-fill",
+  //     "bi bi-star-fill",
+  //     "bi bi-star-fill",
+  //     "bi bi-star-fill",
+  //     "bi bi-star-half",
+  //   ],
+  //   text: "They guided us with a clear strategy and affordable solutions. We never imagined such rapid growth — within 6 months, we had an unexpected influx of clients, expanded our team, and took on more space. It truly feels like a miracle.",
+  //   companyLogo: {
+  //     light: "/assets/img/home1/testimonial-company-logo-beauty-queen.png", // Replace with actual image
+  //     dark: "/assets/img/home1/testimonial-company-logo-beauty-queen-white.png", // Replace with actual image
+  //   },
+  //   year: "Clients in 2025",
+  // },
   {
     name: "Astobonny Matrimony",
     authorImg: "/assets/img/home1/testimonial-author-astro-m.png", // Replace with actual image

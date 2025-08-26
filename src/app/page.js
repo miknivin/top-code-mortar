@@ -128,7 +128,7 @@ export default function Home() {
       <Home1ServiceSection />
       <Home1TestimonialSection />
       <Home1WhyUsSection />
-      <Home1CaseStudy />
+      {/* <Home1CaseStudy /> */}
       <Home1ContactSection />
       <Footer1 />
     </>

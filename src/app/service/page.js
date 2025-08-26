@@ -309,10 +309,10 @@ const ServicePage = () => {
                     that don’t just look good on paper, they actually work and
                     deliver meaningful results.
                   </p>
-                  <div className="founder-name-and-desig">
+                  {/* <div className="founder-name-and-desig">
                     <h5>Mr. Jumarashiq</h5>
                     <span>CEO &amp; Founder</span>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
