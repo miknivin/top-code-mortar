@@ -905,7 +905,7 @@ const AboutPage = () => {
                       }
                     >
                       <img
-                        src="/assets/img/innerpages/about-page-gallery-img1.jpg"
+                        src="/assets/img/innerpages/about-page-gallery-img1.png"
                         alt=""
                       />
                     </a>
@@ -919,7 +919,7 @@ const AboutPage = () => {
                       }
                     >
                       <img
-                        src="/assets/img/innerpages/about-page-gallery-img2.jpg"
+                        src="/assets/img/innerpages/about-page-gallery-img2.png"
                         alt=""
                       />
                     </a>
@@ -964,7 +964,7 @@ const AboutPage = () => {
                       }
                     >
                       <img
-                        src="/assets/img/innerpages/about-page-gallery-img3.jpg"
+                        src="/assets/img/innerpages/about-page-gallery-img3.png"
                         alt=""
                       />
                     </a>
@@ -978,7 +978,7 @@ const AboutPage = () => {
                       }
                     >
                       <img
-                        src="/assets/img/innerpages/about-page-gallery-img4.jpg"
+                        src="/assets/img/innerpages/about-page-gallery-img4.png"
                         alt=""
                       />
                     </a>
@@ -1011,7 +1011,7 @@ const AboutPage = () => {
                       }
                     >
                       <img
-                        src="/assets/img/innerpages/about-page-gallery-img5.jpg"
+                        src="/assets/img/innerpages/about-page-gallery-img5.png"
                         alt=""
                       />
                     </a>
@@ -1025,7 +1025,7 @@ const AboutPage = () => {
                       }
                     >
                       <img
-                        src="/assets/img/innerpages/about-page-gallery-img6.jpg"
+                        src="/assets/img/innerpages/about-page-gallery-img6.png"
                         alt=""
                       />
                     </a>
@@ -1054,7 +1054,7 @@ const AboutPage = () => {
         />
       </div>
       <AwardListSection />
-      <Home3PartnerSection />
+      {/* <Home3PartnerSection /> */}
       <Home1TestimonialSection />
       {/* <div className="about-page-testimonial-section">
         <div className="container">

@@ -14,18 +14,18 @@ const Footer1 = () => {
                   <h2>We are Global Digital Brand Tech Agency.</h2>
                 </div>
                 <ul className="contact-list">
-                  <li className="single-contact">
+                  {/* <li className="single-contact">
                     <div className="icon">
                       <img
                         src="/assets/img/home1/icon/contact-call-icon.svg"
                         alt=""
                       />
                     </div>
-                    {/* <div className="content">
+                    <div className="content">
                       <span>Call 24/7 Hours</span>
                       <a href="tel:+997636844563">+99-763 684 4563</a>
-                    </div> */}
-                  </li>
+                    </div>
+                  </li> */}
                   <li className="single-contact">
                     <div className="icon">
                       <img
