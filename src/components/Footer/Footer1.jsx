@@ -161,23 +161,28 @@ const Footer1 = () => {
           </p>
           <ul className="social-list">
             <li>
-              <a href="https://www.facebook.com/">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=61551175980638"
+              >
                 <i className="bx bxl-facebook" />
               </a>
             </li>
 
             <li>
-              <a href="https://www.linkedin.com/">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/company/top-code-media/posts/?feedView=all"
+              >
                 <i className="bx bxl-linkedin" />
               </a>
             </li>
+
             <li>
-              <a href="https://www.youtube.com/">
-                <i className="bx bxl-youtube" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/top_code_?igsh=eTJmY2o0NDVmbmFr"
+              >
                 <i className="bx bxl-instagram-alt" />
               </a>
             </li>

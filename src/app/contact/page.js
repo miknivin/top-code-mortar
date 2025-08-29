@@ -1,4 +1,5 @@
 import ContactForm from "@/components/contact-section/ContactForm";
+import Footer1 from "@/components/Footer/Footer1";
 import Home3Footer from "@/components/Footer/Home3Footer";
 import Header from "@/components/header/Header";
 import Header3 from "@/components/header/Header3";
@@ -178,7 +179,7 @@ const ContactPage = () => {
       <ContactForm />
       {/* Contact Page End */}
 
-      <Home3Footer />
+      <Footer1 />
     </>
   );
 };

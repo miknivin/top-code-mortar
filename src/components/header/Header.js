@@ -709,7 +709,7 @@ const Header = ({ style = "", fluid }) => {
                   </li>
                 </ul> */}
               </li>
-              <li className={`menu-item ${isPortfolioActive ? "active" : ""}`}>
+              {/* <li className={`menu-item ${isPortfolioActive ? "active" : ""}`}>
                 <Link href="/news-insight-grid" className="drop-down">
                   Blog{" "}
                 </Link>
@@ -719,7 +719,7 @@ const Header = ({ style = "", fluid }) => {
                     state.activeMenu === "portfolio" ? "dash" : "plus"
                   } dropdown-icon`}
                 />
-                {/* <ul
+                <ul
                   className={`sub-menu ${
                     state.activeMenu === "portfolio" ? "d-block" : "none"
                   }`}
@@ -789,8 +789,8 @@ const Header = ({ style = "", fluid }) => {
                   >
                     <Link href="/portfolio/details">Portfolio Details</Link>
                   </li>
-                </ul> */}
-              </li>
+                </ul>
+              </li> */}
             </ul>
             <div className="btn-and-contact-area d-lg-none d-block">
               <div className="contact-area">
