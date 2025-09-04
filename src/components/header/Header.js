@@ -181,7 +181,9 @@ const Header = ({ style = "", fluid }) => {
             <div className="content">
               <span>Our Support</span>
               <h6>
-                <a href="tel:+997636844568">support@topcodemedia.com </a>
+                <a href="mailto:support@topcodemedia.com">
+                  support@topcodemedia.com{" "}
+                </a>
               </h6>
             </div>
           </div>
@@ -197,11 +199,11 @@ const Header = ({ style = "", fluid }) => {
                   className="img-fluid"
                   src="/assets/img/header-logo.png"
                 />
-                <img
+                {/* <img
                   alt="image"
                   className="img-fluid dark"
                   src="/assets/img/header-logo-white.svg"
-                />
+                /> */}
               </Link>
               <div className="menu-close-btn" onClick={toggleSidebar}>
                 <i className="bi bi-x" />
@@ -452,12 +454,12 @@ const Header = ({ style = "", fluid }) => {
                 <Link href="/about" className="drop-down">
                   Who we are
                 </Link>
-                <i
+                {/* <i
                   onClick={() => toggleMenu("company")}
                   className={`bi bi-${
                     state.activeMenu === "company" ? "dash" : "plus"
                   } dropdown-icon`}
-                />
+                /> */}
                 {/* <ul
                   className={`sub-menu ${
                     state.activeMenu === "company" ? "d-block" : "none"
@@ -800,7 +802,16 @@ const Header = ({ style = "", fluid }) => {
                 <div className="content">
                   <span>Our Support</span>
                   <h6>
-                    <a href="tel:+997636844563">+99-763 684 4563 </a>
+                    <a
+                      style={{
+                        fontSize: "14px",
+                        wordBreak: "break-word", // prevent overflow
+                        display: "inline-block", // keeps styling clean
+                      }}
+                      href="mailto:support@topcodemedia.com"
+                    >
+                      support@topcodemedia.com
+                    </a>
                   </h6>
                 </div>
               </div>

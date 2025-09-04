@@ -937,7 +937,7 @@ const AboutPage = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="col-md-12 d-lg-none d-md-flex justify-content-md-end">
+                  {/* <div className="col-md-12 d-lg-none d-md-flex justify-content-md-end">
                     <a
                       data-fancybox="gallery-01"
                       style={{ cursor: "pointer" }}
@@ -950,7 +950,7 @@ const AboutPage = () => {
                         alt=""
                       />
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="col-lg-4 col-md-6">
